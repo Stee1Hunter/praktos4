@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <Windows.h>
 #include <algorithm> 
 #include <random> 
@@ -22,11 +22,8 @@ int main() {
         cin >> ch;
         if (ch == 1)
         {
-            for (int i = word.length() - 1; i >= 0; i--)
-            {
-                cout << word[i];
-            }
-            cout << endl;
+            reverse(word.begin(), word.end());
+            cout << word << endl;
         }
         if (ch == 2)
         {
@@ -69,6 +66,10 @@ int main() {
         if (ch > 5 || ch < 1)
         {
             cout << "Такого выбора нет, давай по новой" << endl;
+        }
+    }
+    return 0;
+}
         }
     }
     return 0;
